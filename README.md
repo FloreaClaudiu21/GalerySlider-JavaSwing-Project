@@ -1,6 +1,6 @@
 # GalerySlider-JavaSwing-Project
 
-<img src="https://i.gyazo.com/fc301c1649240f25365624b67d4452a6.jpg" alt="" />
+<img src="https://i.gyazo.com/9b77aeeaa7d94dc3bfed82256cbd9805.png" alt="" />
 <img src="https://i.gyazo.com/5fd0dec40d5d5cefaa326368917d027e.png" alt="" />
 <img src="https://i.gyazo.com/fc301c1649240f25365624b67d4452a6.jpg" alt="" />
 
