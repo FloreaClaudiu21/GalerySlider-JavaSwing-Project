@@ -2,6 +2,7 @@ package me.window;
 
 import me.window.login.Login;
 import me.window.panel.GaleryPanel;
+import me.window.panel.PhotosPanel;
 import me.window.register.Register;
 import me.window.users.Users;
 
@@ -16,13 +17,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Window extends JFrame {
-    public JFrame WINDOW;
     public Users USERS;
-    public Login LOGIN_PANEL;
-    public Register REGISTER_PANEL;
+    public JFrame WINDOW;
     public GaleryPanel GP;
+    public Login LOGIN_PANEL;
     public JPanel MAIN_CONTAINER;
     public boolean LOADING = true;
+    public Register REGISTER_PANEL;
+    public PhotosPanel PHOTOS_PANEL;
     public List<BufferedImage> IMAGES;
 
     public Window() throws Exception {
@@ -31,8 +33,9 @@ public class Window extends JFrame {
         this.IMAGES = new ArrayList<>();
         this.MAIN_CONTAINER = new JPanel();
         this.GP = new GaleryPanel(this);
-        this.MAIN_CONTAINER.setLayout(new GridLayout(1, 1));
-        /////////////////////////////////////////////////////////////
+        this.PHOTOS_PANEL = new PhotosPanel(this);
+        this.MAIN_CONTAINER.setLayout(new BorderLayout());
+        //////////////////////////////////////////////////
         this.setResizable(false);
         this.setAutoRequestFocus(true);
         this.setLocationRelativeTo(null);
@@ -40,7 +43,7 @@ public class Window extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setTitle("Galery Slider - Java Project");
         this.setSize(new Dimension(480, 640));
-        this.setMinimumSize(new Dimension(400, 360));
+        this.setMinimumSize(new Dimension(480, 360));
         this.LOGIN_PANEL = new Login(this, GP);
         this.REGISTER_PANEL = new Register(this, GP);
         this.getContentPane().add(this.MAIN_CONTAINER);
@@ -54,8 +57,9 @@ public class Window extends JFrame {
             return;
         }
         this.GP.photoP.max_photo = this.IMAGES.size();
-        JOptionPane.showMessageDialog(null, "Done! Images have been loaded");
+        this.GP.window.PHOTOS_PANEL.init();
         this.LOADING = false;
+        JOptionPane.showMessageDialog(null, "Done! Images have been loaded");
     }
 
     public static List<BufferedImage> getImagesFromDirectory() {

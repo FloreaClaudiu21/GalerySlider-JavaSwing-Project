@@ -49,6 +49,15 @@ public class ButtonsPanel extends JPanel {
         btn.setBackground(Color.decode("#ff758c"));
         btn.setFont(new Font(Font.SERIF, Font.BOLD, 17));
     }
+    public void choosePhoto(int index) {
+        pp.start_photo = index;
+        if (pp.start_photo >= pp.max_photo) {
+            pp.start_photo = 0;
+        }
+        pp.picture_holder.setIcon(pp.scaleImage(pp.gp.window.IMAGES.get(pp.start_photo)));
+        statusLbl.setText((pp.start_photo + 1) + "/" + (pp.max_photo));
+        pp.gp.window.repaint();
+    }
     private void nextPhoto(JButton btn) {
         btn.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {

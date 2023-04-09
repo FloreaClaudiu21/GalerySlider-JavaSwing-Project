@@ -158,7 +158,8 @@ public class Login extends JPanel {
             return;
         }
         this.WINDOW.setResizable(true);
-        this.WINDOW.MAIN_CONTAINER.add(this.GP);
+        this.WINDOW.MAIN_CONTAINER.add(this.WINDOW.PHOTOS_PANEL.MAIN_CONTAINER, BorderLayout.WEST);
+        this.WINDOW.MAIN_CONTAINER.add(this.GP, BorderLayout.CENTER);
         this.WINDOW.MAIN_CONTAINER.remove(this);
         this.WINDOW.setSize(new Dimension(864, 640));
         JOptionPane.showMessageDialog(null, "Successufully logged in as the user '" + email + "', enjoy the application! :)");
