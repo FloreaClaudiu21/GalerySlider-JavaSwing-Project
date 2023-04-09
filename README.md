@@ -2,7 +2,7 @@
 
 <img src="https://i.gyazo.com/9b77aeeaa7d94dc3bfed82256cbd9805.png" alt="" style="display: inline-block;" />
 <img src="https://i.gyazo.com/5fd0dec40d5d5cefaa326368917d027e.png" alt="" />
-<img src="https://i.gyazo.com/fc301c1649240f25365624b67d4452a6.jpg" alt="" />
+<img src="https://i.gyazo.com/503ba09056daf89d2ec4b700754ca451.jpg" alt="" />
 
 <h2>GalerySlider-JavaSwing-Project is a Java application developed as part of a Java course at a university. The application allows users to navigate through a collection of images that are loaded from a folder called "images". The application is designed using the JavaSwing GUI toolkit, which makes it user-friendly and easy to use.
 
