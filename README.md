@@ -4,7 +4,7 @@
 <img src="https://i.gyazo.com/5fd0dec40d5d5cefaa326368917d027e.png" alt="" />
 <img src="https://i.gyazo.com/503ba09056daf89d2ec4b700754ca451.jpg" alt="" />
 
-<h2>GalerySlider-JavaSwing-Project is a Java application developed as part of a Java course at a university. The application allows users to navigate through a collection of images that are loaded from a folder called "images". The application is designed using the JavaSwing GUI toolkit, which makes it user-friendly and easy to use.
+<h2>GalerySlider-JavaSwing-Project is a Java application developed as part of a Java course at the university. The application allows users to navigate through a collection of images that are loaded from a folder called "images". The application is designed using the JavaSwing GUI toolkit, which makes it user-friendly and easy to use.
 
 The GalerySlider-JavaSwing-Project application features a login/register system that allows users to create an account and log in to access the image gallery. The user account details are saved in a file called "database.dat", which ensures that the user data is safely stored. The login/register system provides an extra layer of security and privacy, ensuring that only authorized users can access the image gallery.
 
